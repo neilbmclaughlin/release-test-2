@@ -1,0 +1,18 @@
+name: Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        description: name
+
+jobs:
+  create_release_branch_and_draft_pr:
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+      - name: Hello World
+        run: echo "Hello World"
+        
